@@ -4,7 +4,7 @@
 
 FROM ubuntu
 
-MAINTAINER Nikola SLAVNIC
+MAINTAINER Nikola SLAVNIC slavnic.n@gmail.com
 
 RUN apt-get update --fix-missing
 
