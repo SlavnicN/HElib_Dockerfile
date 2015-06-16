@@ -38,7 +38,7 @@ ENV LD_LIBRARY_PATH /libfhe/
 RUN apt-get install -y libboost-all-dev
 
 VOLUME ["/fhe/","/libfhe/"]
-ENTRYPOINT["/fhe/Op_x"]
+ENTRYPOINT ["/fhe/Op_x"]
 CMD /bin/bash
 
 EXPOSE 80
