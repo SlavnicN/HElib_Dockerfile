@@ -8,26 +8,26 @@ MAINTAINER Nikola SLAVNIC slavnic.n@gmail.com
 
 RUN apt-get update --fix-missing
 
-RUN apt-get update -y g++
-RUN apt-get update -y make
-RUN apt-get update -y xutils-dev
-RUN apt-get update -y libtool
-RUN apt-get update -y automake
+RUN apt-get install -y g++
+RUN apt-get install -y make
+RUN apt-get install -y xutils-dev
+RUN apt-get install -y libtool
+RUN apt-get install -y automake
 
-RUN apt-get update -y libzip-dev
-RUN apt-get update -y libcurl4-openssl-dev
-RUN apt-get update -y libxml2-dev
+RUN apt-get install -y libzip-dev
+RUN apt-get install -y libcurl4-openssl-dev
+RUN apt-get install -y libxml2-dev
 
-RUN apt-get update -y python
-RUN apt-get update -y wget
-RUN apt-get update -y pandoc
-RUN apt-get update -y whois
-RUN apt-get update -y traceroute
-RUN apt-get update -y unzip
-RUN apt-get update -y git
-RUN apt-get update -y curl
+RUN apt-get install -y python
+RUN apt-get install -y wget
+RUN apt-get install -y pandoc
+RUN apt-get install -y whois
+RUN apt-get install -y traceroute
+RUN apt-get install -y unzip
+RUN apt-get install -y git
+RUN apt-get install -y curl
 
-RUN apt-get update -y vim
+RUN apt-get install -y vim
 
 
 #
@@ -35,7 +35,7 @@ RUN apt-get update -y vim
 #
 
 ENV LD_LIBRARY_PATH /libfhe/
-RUN apt-get update -y libboost-all-dev
+RUN apt-get install -y libboost-all-dev
 
 VOLUME ["/fhe/","/libfhe/"]
 ENTRYPOINT["/fhe/Op_x"]
