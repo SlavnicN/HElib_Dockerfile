@@ -26,6 +26,7 @@ RUN apt-get install -y traceroute
 RUN apt-get install -y unzip
 RUN apt-get install -y git
 RUN apt-get install -y curl
+RUN apt-get install -y tcpdump
 
 RUN apt-get install -y vim
 
