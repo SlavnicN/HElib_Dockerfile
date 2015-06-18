@@ -6,7 +6,7 @@ FROM ubuntu
 
 MAINTAINER Nikola SLAVNIC slavnic.n@gmail.com
 
-RUN apt-get update --fix-missing
+RUN export http_proxy=http://10.43.240.11:8080 ; apt-get update --fix-missing
 
 RUN apt-get install -y g++
 RUN apt-get install -y make
@@ -26,7 +26,11 @@ RUN apt-get install -y traceroute
 RUN apt-get install -y unzip
 RUN apt-get install -y git
 RUN apt-get install -y curl
+
+#tracking packages
 RUN apt-get install -y tcpdump
+#revers proxy
+RUN apt-get install -y nginx
 
 RUN apt-get install -y vim
 
