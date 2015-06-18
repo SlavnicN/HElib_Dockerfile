@@ -6,7 +6,7 @@ FROM ubuntu
 
 MAINTAINER Nikola SLAVNIC slavnic.n@gmail.com
 
-RUN export http_proxy=http://10.43.240.11:8080 ; apt-get update --fix-missing
+RUN apt-get update --fix-missing
 
 RUN apt-get install -y g++
 RUN apt-get install -y make
