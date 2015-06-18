@@ -46,4 +46,3 @@ VOLUME ["/fhe/","/libfhe/"]
 ENTRYPOINT ["/fhe/Op_x"]
 CMD /bin/bash
 
-EXPOSE 80
